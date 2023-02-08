@@ -1,14 +1,20 @@
 #!/usr/bin/python3
 def minOperations(n):
     ''''''
-    # If n is 1, 0 operations are needed.
-    if n <= 1:
+    if type(n) is not int or n <= 0:
         return 0
-
-    # Find smallest prime factors
-    for i in range(2, int((n / 2) + 1)):
-        if n % i == 0:
-            return minOperations(int(n / i)) + i
-    return n
+    operations = 0
+    H = 1
+    copy_all = 0
+    paste = 0
+    H_copied = 0
+    while H < n:
+        if n % H == 0:
+            copy_all += 1
+            H_copied = H
+        paste += 1
+        operations = copy_all + paste
+        H += H_copied
+    return operations
 
 print((minOperations.__doc__).rstrip())
