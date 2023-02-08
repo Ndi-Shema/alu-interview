@@ -4,7 +4,6 @@ def minOperations(n):
         return 0
 
     operations = 0
-
     i = 2
     while i <= n:
         while n % i == 0:
