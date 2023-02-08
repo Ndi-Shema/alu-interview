@@ -11,4 +11,4 @@ def minOperations(n):
             return minOperations(int(n / i)) + i
     return n
 
-print(minOperations.__doc__[:-2])
+print((minOperations.__doc__).rstrip())
