@@ -4,6 +4,13 @@ import math
 
 
 def minOperations(n):
+    '''
+    Prototype: def minOperations(n)
+    Returns an integer
+    If n is impossible to achieve, return 0
+    :param n:
+    :return:
+    '''
     if n <= 1:
         return 0
 
