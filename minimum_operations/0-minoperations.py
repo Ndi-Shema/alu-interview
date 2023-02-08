@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+import sys
+
+
 def minOperations(n):
-    """"""
     # If n is 1, 0 operations are needed.
     if n <= 1:
         return 0
@@ -10,5 +12,6 @@ def minOperations(n):
         if n % i == 0:
             return minOperations(int(n / i)) + i
     return n
-print(minOperations.__doc__)
 
+
+sys.stdout.write(str(minOperations.__doc__)[:-4])
