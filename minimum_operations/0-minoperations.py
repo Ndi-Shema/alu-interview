@@ -18,7 +18,6 @@ def minOperations(n):
     :param n:
     :return:
     '''
-    print(minOperations.__doc__)
     if type(n) is not int or n <= 0:
         return 0
     operations = 0
@@ -35,3 +34,5 @@ def minOperations(n):
         H += H_copied
     return operations
 
+
+print(minOperations.__doc__)
