@@ -21,4 +21,4 @@ def minOperations(n):
     return n
 
 
-print(minOperations.__doc__)
+
