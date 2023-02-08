@@ -17,4 +17,4 @@ def minOperations(n):
         H += H_copied
     return operations
 
-print((minOperations.__doc__).rstrip())
+print((minOperations.__doc__).strip())
