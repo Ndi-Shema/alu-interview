@@ -3,7 +3,11 @@ import sys
 
 
 def minOperations(n):
-    """this module do this """
+    """
+    Arguments :
+    :param n:
+    :return:
+    """
     # If n is 1, 0 operations are needed.
     if n <= 1:
         return 0
@@ -14,4 +18,4 @@ def minOperations(n):
             return minOperations(int(n / i)) + i
     return n
 
-#print (repr(minOperations.__doc__))
+# print (repr(minOperations.__doc__))
