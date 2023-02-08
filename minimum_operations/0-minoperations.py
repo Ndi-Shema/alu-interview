@@ -1,10 +1,4 @@
 #!/usr/bin/python3
-"""
-Calculates the fewest number of operations needed to result
-in exactly n H characters
-"""
-
-
 def minOperations(n):
     ''''''
     # If n is 1, 0 operations are needed.
@@ -17,6 +11,4 @@ def minOperations(n):
             return minOperations(int(n / i)) + i
 
     return n
-
-
 print(minOperations.__doc__)
