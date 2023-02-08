@@ -11,4 +11,4 @@ def minOperations(n):
             n = n / i
         i += 1
     operations += n
-    return int(operations)
+    return operations
