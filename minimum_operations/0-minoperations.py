@@ -11,4 +11,4 @@ def minOperations(n):
             return minOperations(int(n / i)) + i
     return n
 
-minOperations.__doc__
+    print (minOperations.__doc__)
