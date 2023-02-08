@@ -7,8 +7,7 @@ in exactly n H characters
 
 def minOperations(n):
     """
-    Calculates the fewest number of operations
-    needed to result in exactly n H characters
+    calculates operations
     """
     if type(n) is not int or n <= 0:
         return 0
