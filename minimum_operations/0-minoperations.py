@@ -10,5 +10,5 @@ def minOperations(n):
         if n % i == 0:
             return minOperations(int(n / i)) + i
     return n
+print('',end=minOperations.__doc__)
 
-print (minOperations.__doc__,end='')
