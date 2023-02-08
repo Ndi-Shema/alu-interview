@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 def minOperations(n):
     """turn 0 if n is less than or equal to 0"""
     if n <= 0:
