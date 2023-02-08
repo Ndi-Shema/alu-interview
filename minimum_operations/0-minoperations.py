@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def minOperations(n):
-    ''''''
+    """"""
     # If n is 1, 0 operations are needed.
     if n <= 1:
         return 0
