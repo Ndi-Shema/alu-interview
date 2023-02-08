@@ -1,23 +1,15 @@
 #!/usr/bin/python3
-
-import math
+"""
+Calculates the fewest number of operations needed to result
+in exactly n H characters
+"""
 
 
 def minOperations(n):
-    '''
-    Prototype: def minOperations(n)
-    Returns an integer
-    If n is impossible to achieve, return 0
-    Example:
-
-    n = 9
-
-    H => Copy All => Paste => HH => Paste =>HHH => Copy All => Paste => HHHHHH => Paste => HHHHHHHHH
-
-    Number of operations: 6
-    :param n:
-    :return:
-    '''
+    """
+    Calculates the fewest number of operations
+    needed to result in exactly n H characters
+    """
     if type(n) is not int or n <= 0:
         return 0
     operations = 0
