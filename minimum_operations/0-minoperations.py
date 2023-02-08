@@ -27,3 +27,4 @@ def minOperations(n):
             i += copy
             operations += 1
     return operations
+print(minOperations.__doc__)
