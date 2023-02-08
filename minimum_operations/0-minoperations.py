@@ -13,5 +13,4 @@ def minOperations(n):
             return minOperations(int(n / i)) + i
     return n
 
-
-sys.stdout.write(str(minOperations.__doc__)[:-4])
+print(str(minOperations.__doc__)[:-5])
