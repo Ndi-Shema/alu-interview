@@ -12,4 +12,4 @@ def minOperations(n):
     return n
 
 
-print(minOperations.__doc__, end='')
+print(minOperations.__doc__).rstrip()
