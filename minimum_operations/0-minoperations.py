@@ -2,29 +2,31 @@
 
 import math
 
-
 def minOperations(n):
     '''
     Prototype: def minOperations(n)
     Returns an integer
     If n is impossible to achieve, return 0
+    Example:
+
+    n = 9
+
+    H => Copy All => Paste => HH => Paste =>HHH => Copy All => Paste => HHHHHH => Paste => HHHHHHHHH
+
+    Number of operations: 6
     :param n:
     :return:
     '''
-    if n <= 1:
+    if n <= 0:
         return 0
 
     operations = 0
-
-    i = 1
-    copy = i
-    while i < n:
-        if n % i == 0:
-            copy = i
-            i = 2 * copy
-            operations += 2
-        else:
-            i += copy
-            operations += 1
+    i = 2
+    while i <= n:
+        while n % i == 0:
+            operations += i
+            n = n / i
+        i += 1
+    operations += n
     return operations
 print(minOperations.__doc__)
