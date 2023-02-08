@@ -7,7 +7,7 @@ in exactly n H characters
 
 def minOperations(n):
     """
-    calculates operations
+    n
     """
     # If n is 1, 0 operations are needed.
     if n <= 1:
@@ -21,4 +21,4 @@ def minOperations(n):
     return n
 
 
-
+print(minOperations.__doc__)
