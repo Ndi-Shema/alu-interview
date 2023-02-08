@@ -2,6 +2,7 @@
 
 import math
 
+
 def minOperations(n):
     '''
     Prototype: def minOperations(n)
@@ -17,19 +18,20 @@ def minOperations(n):
     :param n:
     :return:
     '''
-    if type(n) is not int or n <= 0:
+    if n <= 1:
         return 0
+    number = 1
+    copy = number
     operations = 0
-    H = 1
-    copy_all = 0
-    paste = 0
-    H_copied = 0
-    while H < n:
-        if n % H == 0:
-            copy_all += 1
-            H_copied = H
-        paste += 1
-        operations = copy_all + paste
-        H += H_copied
+    while number < n:
+        if n % number == 0:
+            copy = number
+            number = 2 * copy
+            operations += 2
+        else:
+            number += copy
+            operations += 1
     return operations
+
+
 print(minOperations.__doc__)
