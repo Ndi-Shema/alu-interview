@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-import sys
-
-
 def minOperations(n):
     """
     Arguments :
@@ -18,4 +15,3 @@ def minOperations(n):
             return minOperations(int(n / i)) + i
     return n
 
-# print (repr(minOperations.__doc__))

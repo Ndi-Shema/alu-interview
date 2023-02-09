@@ -7,3 +7,4 @@ minOperations = __import__('0-minoperations').minOperations
 n = 21
 print(minOperations(n))
 
+print(minOperations.__doc__)
