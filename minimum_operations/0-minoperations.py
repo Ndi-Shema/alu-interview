@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+  Arguments :
+  :param n:
+  :return:
+  """
 def minOperations(n):
     """
     Arguments :
