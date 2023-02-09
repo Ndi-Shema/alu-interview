@@ -7,11 +7,11 @@
 
 
 def minOperations(n):
-    # If n is 1, 0 operations are needed.
+    # for n=0 or n=1
     if n <= 1:
         return 0
 
-    # Find smallest prime factors
+    # loop to find prime factors (smaller number)
     for i in range(2, int((n / 2) + 1)):
         if n % i == 0:
             return minOperations(int(n / i)) + i
