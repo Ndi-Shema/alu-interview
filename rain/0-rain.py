@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-
+"""Rain calculation. """
 
 def rain(walls):
     n = len(walls)
