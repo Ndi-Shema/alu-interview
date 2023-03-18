@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-#creating pascal's triangle
+# creating pascal's triangle
 """
     Return an empty list if n is less than or equal to 0
 """
+
 def pascal_triangle(n):
     '''the function'''
     if n <= 0:
