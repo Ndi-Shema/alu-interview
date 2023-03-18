@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-
 """
-Return an empty list if n is less than or equal to 0
+    Return an empty list if n is less than or equal to 0
 """
 def pascal_triangle(n):
     if n <= 0:
