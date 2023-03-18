@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" Return an empty list if n is less than or equal to 0"""
-""" Return an empty list if n is less than or equal to 0
+ """Return an empty list if n is less than or equal to 0
     Initialize the triangle list with the first row
     Generate each subsequent row using the previous row
     Create a new row with i+1 elements, initially filled with 0
@@ -8,6 +7,7 @@
     Calculate the middle elements of the row based on the previous row
     Append the completed row to the triangle list
     Return the completed triangle list"""
+
 def pascal_triangle(n):
     if n <= 0:
         return []
